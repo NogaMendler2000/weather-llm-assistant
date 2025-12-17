@@ -1,4 +1,4 @@
-# Weather Chatbot – LLM & External API Integration 
+# Weather LLM assistant
 
 ## Overview
 This project implements a conversational Weather Chatbot that combines a Large Language Model (LLM) with an external weather data API.  
