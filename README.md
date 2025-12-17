@@ -8,6 +8,23 @@ The system is designed to demonstrate correct API integration, clear separation 
 The chatbot allows users to ask weather-related questions in free natural language.  
 The system identifies the relevant location, retrieves real weather data from the OpenWeather API, and uses a language model **only** to explain or interpret this data in a natural and user-friendly way.
 
+## Supported Interaction Types
+Although the assistant operates within a single domain (weather), it supports **multiple distinct types of user interaction**, each representing a different task:
+
+- **Factual information queries**  
+  The assistant provides direct answers based on real-time weather data retrieved from the external API.  
+  *Example:* “What is the weather in London?”
+
+- **Interpretive and reasoning-based queries**  
+  The assistant explains or evaluates weather conditions by interpreting factual data (e.g., temperature, wind, humidity).  
+  *Example:* “Is it cold today?” or “Is the weather good for outdoor activity?”
+
+- **Recommendation-based queries**  
+  The assistant offers practical suggestions derived from weather conditions, such as clothing recommendations.  
+  *Example:* “What should I wear today in Sydney?”
+
+These interaction types demonstrate the assistant’s ability to handle different tasks while maintaining strict grounding in external data sources.
+
 ## Design Principles
 - Clear separation of concerns between language understanding and data retrieval  
 - External APIs serve as the **single source of factual truth**  
@@ -32,3 +49,4 @@ The system identifies the relevant location, retrieves real weather data from th
    python main.py
 5. Interact with the chatbot, to exit type:
    exit
+
